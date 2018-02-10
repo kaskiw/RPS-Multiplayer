@@ -1,0 +1,25 @@
+body{
+		background-image: url("../images/rpsbg.jpg");
+}
+.area{
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	height: 500px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+.winLoss{
+	height: 50%;
+}
+.chat{
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	height: 45%;
+
+}
+.jumbotron{
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+}

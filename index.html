@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="jumbotron">
+            <h1>Rock. Paper. Scissors.</h1>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <form>
+                    <div class="nameField">
+                        <input type="text" id="playerName" name="name" placeholder="Type your name here..">
+                        <input type="submit" id="submitName" name="submitButton" value="Start">
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 area">
+                <h1 class='playerOne'>Waiting for player one...</h1>
+                <div class="choiceArea">
+                </div>
+            </div>
+            <div class="col-xs-4 area">
+                <div class='winLoss'>
+                    <h1>Who wins/loses goes here</h1>
+                </div>
+                <div class='chat'>Chat Area</div>
+            </div>
+            <div class="col-xs-4 area">
+                <h1 class='playerTwo'>Waiting for player two...</h1>
+                <div class="choiceArea">
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Import Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase Database for Game Logic
+        var config = {
+            apiKey: "AIzaSyDsR5ERs7in-_MWzR04ooA6bAQ4JBAJ3I4",
+            authDomain: "rps-games.firebaseapp.com",
+            databaseURL: "https://rps-games.firebaseio.com",
+            projectId: "rps-games",
+            storageBucket: "rps-games.appspot.com",
+            messagingSenderId: "1051172867714"
+        };
+        firebase.initializeApp(config);
+    </script>
+    
+    <!--Import Javascript-->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+    <script src="assets/js/rps.js"></script>
+</body>
+
+</html>
